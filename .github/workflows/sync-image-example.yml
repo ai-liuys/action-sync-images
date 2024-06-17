@@ -27,4 +27,5 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/hslr/sun-panel:1.4.0 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/sun-panel:1.4.0
+          skopeo copy docker://docker.io/bitnami/postgresql:15.2.0-debian-11-r2 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/postgresql:15.2.0-debian-11-r2
+          skopeo copy docker://docker.io/bitnami/keycloak:20.0.5-debian-11-r4 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/keycloak:20.0.5-debian-11-r4
