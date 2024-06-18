@@ -27,4 +27,7 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/rancher/mirrored-pause:3.6 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/mirrored-pause:3.6
+          skopeo copy docker://docker.io/rancher/local-path-provisioner:v0.0.26 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/local-path-provisioner:v0.0.26
+          skopeo copy docker://docker.io/rancher/mirrored-coredns-coredns:1.10.1 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/mirrored-coredns-coredns:1.10.1
+          skopeo copy docker://docker.io/rancher/mirrored-metrics-server:v0.7.0 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/mirrored-metrics-server:v0.7.0
+          skopeo copy docker://docker.io/rancher/klipper-helm:v0.8.3-build20240228 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/klipper-helm:v0.8.3-build20240228
