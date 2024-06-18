@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/postgres:latest docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/postgres:latest
+          skopeo copy docker://docker.io/rancher/mirrored-library-busybox:1.36.1 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/rancher/mirrored-library-busybox:1.36.1
