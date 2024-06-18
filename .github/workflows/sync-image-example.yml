@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/jboss/keycloak:latest docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/keycloak:latest
+          skopeo copy docker://docker.io/rancher/mirrored-pause:3.6 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/mirrored-pause:3.6
