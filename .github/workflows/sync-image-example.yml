@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/nginx:stable-alpine docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/nginx:stable-alpine
+          skopeo copy docker://docker.io/bitnami/keycloak:24.0.5-debian-12-r0 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/keycloak:24.0.5-debian-12-r0
