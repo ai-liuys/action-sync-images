@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/bitnami/postgresql:16.3.0-debian-12-r14 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/postgresql:16.3.0-debian-12-r14
+          skopeo copy docker://docker.io/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/nginx:latest
