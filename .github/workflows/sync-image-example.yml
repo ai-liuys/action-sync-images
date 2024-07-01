@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/nginx:latest
+          skopeo copy docker://docker.io/ikubernetes/myapp:v1 docker://registry.cn-hangzhou.aliyuncs.com/images-sysncer/myapp:v1
